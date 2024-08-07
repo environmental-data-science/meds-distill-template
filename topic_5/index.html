@@ -70,7 +70,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#topic-5-basic-formatting" class="md-skip">
+        <a href="#visual-editors" class="md-skip">
           Skip to content
         </a>
       
@@ -284,7 +284,7 @@
         
   
   <span class="md-ellipsis">
-    Topic 1: Add a new site page
+    Topic 1: Add/remove a site page
   </span>
   
 
@@ -305,7 +305,7 @@
         
   
   <span class="md-ellipsis">
-    Topic 2: Update site title & subtitle
+    Topic 2: Update site title and subtitle
   </span>
   
 
@@ -326,7 +326,7 @@
         
   
   <span class="md-ellipsis">
-    Topic 3: Add images
+    Topic 3: Adding images
   </span>
   
 
@@ -370,8 +370,17 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
-        
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Topic 5: Basic formatting
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
         
@@ -382,6 +391,65 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#visual-editors" class="md-nav__link">
+    <span class="md-ellipsis">
+      Visual Editors
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ide-visual-editors" class="md-nav__link">
+    <span class="md-ellipsis">
+      IDE Visual Editors
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="IDE Visual Editors">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#rstudio" class="md-nav__link">
+    <span class="md-ellipsis">
+      RStudio
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#visual-studio-code-vscode" class="md-nav__link">
+    <span class="md-ellipsis">
+      Visual Studio Code (VSCode)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -441,7 +509,7 @@
         
   
   <span class="md-ellipsis">
-    Topic 8: Add a dropdown menu from navigation bar item
+    Topic 8: Creating a dropdown list in the navigation bar
   </span>
   
 
@@ -462,7 +530,7 @@
         
   
   <span class="md-ellipsis">
-    Topic 9: Change site fonts
+    Topic 9: Changing site fonts
   </span>
   
 
@@ -483,7 +551,7 @@
         
   
   <span class="md-ellipsis">
-    Topic 10: Add a table
+    Topic 10: Inserting tables
   </span>
   
 
@@ -531,7 +599,7 @@
         
   
   <span class="md-ellipsis">
-    Resources
+    Course Resources
   </span>
   
 
@@ -557,8 +625,56 @@
   
   
   
-    
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#visual-editors" class="md-nav__link">
+    <span class="md-ellipsis">
+      Visual Editors
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ide-visual-editors" class="md-nav__link">
+    <span class="md-ellipsis">
+      IDE Visual Editors
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="IDE Visual Editors">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#rstudio" class="md-nav__link">
+    <span class="md-ellipsis">
+      RStudio
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#visual-studio-code-vscode" class="md-nav__link">
+    <span class="md-ellipsis">
+      Visual Studio Code (VSCode)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -576,11 +692,92 @@
   
 
 
-<h1 id="topic-5-basic-formatting">Topic 5: Basic formatting<a class="headerlink" href="#topic-5-basic-formatting" title="Permanent link">&para;</a></h1>
+  <h1>Topic 5: Basic formatting</h1>
+
 <p style="color: #ba5e00"><b>TO UPDATE THIS PAGE:</b> Open and edit the <b>topic_5.md</b> file, in <code>docs/</code> folder, to delete this placeholder text and customize with your own!</p>
 
-<p>If you're familiar with markdown, use standard syntax to update font styles, add bulleted lists, subscripts/superscripts, etc. (or learn more from the <a href="https://www.rstudio.org/links/r_markdown_cheat_sheet">R Markdown cheatsheet</a>). </p>
-<p>If you're not familiar with markdown and want an easier way to update formatting, there is a Visual Editor in RStudio versions &gt; 1.4. It is absolutely worth it to check it out for easier formatting of text, images, tables, citations, and more. Read more about the new RStudio Visual Editor <a href="https://blog.rstudio.com/2020/09/30/rstudio-v1-4-preview-visual-markdown-editing/">here</a>.</p>
+<p>If you're familiar with markdown, use standard syntax to update font styles, add bulleted lists, subscripts/superscripts, etc. (or learn more from the <a href="https://github.com/im-luka/markdown-cheatsheet">Markdown cheatsheet</a>). </p>
+<h2 id="visual-editors">Visual Editors<a class="headerlink" href="#visual-editors" title="Permanent link">&para;</a></h2>
+<p>If you're not familiar with markdown and want an easier way to update formatting, there are plenty of visual editors. You can use:</p>
+<ol>
+<li>
+<p><strong>Typora</strong> - A minimalist Markdown editor that provides a seamless live preview feature, allowing you to edit and see the results visually in real-time. <a href="https://typora.io/">Download Typora</a></p>
+</li>
+<li>
+<p><strong>Mark Text</strong> - An open-source Markdown editor that focuses on speed and usability with an interface that hides Markdown formatting symbols unless you need them. <a href="https://marktext.app/">Download Mark Text</a></p>
+</li>
+<li>
+<p><strong>StackEdit</strong> - A free, open-source in-browser Markdown editor that's great for those who prefer working directly within their web browser. <a href="https://stackedit.io/">Use StackEdit</a></p>
+</li>
+<li>
+<p><strong>Zettlr</strong> - A Markdown editor designed for researchers, it supports complex integrations and features like Zettelkasten and citation management. <a href="https://www.zettlr.com/">Download Zettlr</a></p>
+</li>
+<li>
+<p><strong>Ghostwriter</strong> - A distraction-free Markdown editor for Windows and Linux, offering a clean interface and useful features like live HTML preview. <a href="https://wereturtle.github.io/ghostwriter/">Download Ghostwriter</a></p>
+</li>
+<li>
+<p><strong>iA Writer</strong> - Known for its focus mode, which helps you concentrate on one sentence at a time, it's available for Mac, iOS, and Android. <a href="https://ia.net/writer">Download iA Writer</a></p>
+</li>
+</ol>
+<p>These editors simplify the process of using Markdown by providing friendly interfaces and visual previews, making them great choices for both beginners and experienced users alike.</p>
+<h2 id="ide-visual-editors">IDE Visual Editors<a class="headerlink" href="#ide-visual-editors" title="Permanent link">&para;</a></h2>
+<p>Both <a href="https://posit.co/downloads/">RStudio</a> and Visual Studio Code (<a href="https://code.visualstudio.com">VSCode</a>) are powerful tools that support Markdown editing with features that enhance visual editing and provide a more user-friendly experience. Here’s how you can use these environments effectively for Markdown editing:</p>
+<h3 id="rstudio">RStudio<a class="headerlink" href="#rstudio" title="Permanent link">&para;</a></h3>
+<p>RStudio is particularly well-suited for Markdown editing. Here's how to use it:</p>
+<ol>
+<li><strong>Open/Create a Markdown File</strong>:</li>
+<li>
+<p>Start RStudio and either open an existing Markdown file or create a new one by going to <strong>File &gt; New File &gt; R Markdown</strong>.</p>
+</li>
+<li>
+<p><strong>Edit and Write Markdown</strong>:</p>
+</li>
+<li>
+<p>You can write standard Markdown for use in this template; <code>mkdocs</code> cannot parse RMarkdown documents that contain R code blocks. RStudio's editor supports syntax highlighting for Markdown and R code, making it easier to distinguish text from code (again, don't try to use R code on pages for this template).</p>
+</li>
+<li>
+<p><strong>Use the RStudio Toolbar</strong>:</p>
+</li>
+<li>
+<p>RStudio includes a Markdown toolbar that provides buttons for common formatting options like headers, bold, italics, bullet lists, and more. This toolbar simplifies formatting without needing to remember Markdown syntax.</p>
+</li>
+<li>
+<p><strong>Live Preview</strong>:</p>
+</li>
+<li>Use the <strong>Knit</strong> button (the yarn ball icon) in RStudio to compile your Markdown document into a HTML, PDF, or Word document. This action also provides a preview of how your document will look.</li>
+<li>For plain Markdown files, you can use the <strong>Preview</strong> button (next to the Knit button) to see a live HTML preview of your document.</li>
+</ol>
+<h3 id="visual-studio-code-vscode">Visual Studio Code (VSCode)<a class="headerlink" href="#visual-studio-code-vscode" title="Permanent link">&para;</a></h3>
+<p>VSCode, a lightweight but powerful source code editor, supports Markdown editing through its built-in features and extensive extension ecosystem:</p>
+<ol>
+<li><strong>Install Markdown Extensions</strong>:</li>
+<li>Open the Extensions view by clicking on the square icon on the sidebar, or pressing <code>Ctrl+Shift+X</code>.</li>
+<li>
+<p>Install extensions such as <strong>Markdown All in One</strong> by Yu Zhang for enhanced Markdown support (like table formatting, list editing, and more) and <strong>Markdown Preview Enhanced</strong> by Yiyi Wang for a powerful preview feature.</p>
+</li>
+<li>
+<p><strong>Open/Create a Markdown File</strong>:</p>
+</li>
+<li>
+<p>Open an existing Markdown file or create a new one with a <code>.md</code> extension. VSCode recognizes the file type and enables Markdown-specific features.</p>
+</li>
+<li>
+<p><strong>Edit and Preview Markdown</strong>:</p>
+</li>
+<li>
+<p>Write your Markdown content in the editor. With the Markdown Preview Enhanced extension, you can open a side-by-side preview by clicking on the preview icon in the top right of the editor or by pressing <code>Ctrl+K V</code>. This live preview updates as you edit the Markdown file.</p>
+</li>
+<li>
+<p><strong>Use Markdown Shortcuts and Commands</strong>:</p>
+</li>
+<li>
+<p>VSCode supports various Markdown shortcuts and commands which can be accessed via <code>Ctrl+Shift+P</code> to open the Command Palette and typing <code>Markdown</code>. You'll find commands for styling, navigating, and managing Markdown content.</p>
+</li>
+<li>
+<p><strong>Customize Your Experience</strong>:</p>
+</li>
+<li>Customize the Markdown preview styles by modifying the VSCode settings or adding custom CSS styles for the preview.</li>
+</ol>
 
 
 
@@ -606,11 +803,41 @@
         
       </main>
       
-        <footer class="md-footer">
-  
-  <div class="md-footer-meta md-typeset">
-    <div class="md-footer-meta__inner md-grid">
-      <div class="md-copyright">
+        <!--
+  Copyright (c) 2016-2024 Martin Donath <martin.donath@squidfunk.com>
+
+  Permission is hereby granted, free of charge, to any person obtaining a copy
+  of this software and associated documentation files (the "Software"), to
+  deal in the Software without restriction, including without limitation the
+  rights to use, copy, modify, merge, publish, distribute, sublicense, and/or
+  sell copies of the Software, and to permit persons to whom the Software is
+  furnished to do so, subject to the following conditions:
+
+  The above copyright notice and this permission notice shall be included in
+  all copies or substantial portions of the Software.
+
+  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+  FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT. IN NO EVENT SHALL THE
+  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+  FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
+  IN THE SOFTWARE.
+-->
+
+<!-- Footer -->
+<footer class="md-footer">
+
+    <!-- Link to previous and/or next page -->
+    
+
+    <!-- Further information -->
+    <div class="md-footer-meta md-typeset">
+        <div class="md-footer-meta__inner md-grid">
+            <div>
+<a href="https://bren.ucsb.edu/"><img src="/meds-mkdocs-template/assets/images/bren_white_logo.png" alt="Bren School logo" style="width:350px;" /></a>
+</div>
+            <div class="md-copyright">
   
   
     Made with
@@ -619,9 +846,11 @@
     </a>
   
 </div>
-      
+
+            <!-- Social links -->
+            
+        </div>
     </div>
-  </div>
 </footer>
       
     </div>

@@ -69,11 +69,6 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
-        
-        <a href="#topic-2-update-site-title-and-subtitle" class="md-skip">
-          Skip to content
-        </a>
-      
     </div>
     <div data-md-component="announce">
       
@@ -284,7 +279,7 @@
         
   
   <span class="md-ellipsis">
-    Topic 1: Add a new site page
+    Topic 1: Add/remove a site page
   </span>
   
 
@@ -307,14 +302,12 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
-        
-      
       
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
-    Topic 2: Update site title & subtitle
+    Topic 2: Update site title and subtitle
   </span>
   
 
@@ -336,7 +329,7 @@
         
   
   <span class="md-ellipsis">
-    Topic 3: Add images
+    Topic 3: Adding images
   </span>
   
 
@@ -441,7 +434,7 @@
         
   
   <span class="md-ellipsis">
-    Topic 8: Add a dropdown menu from navigation bar item
+    Topic 8: Creating a dropdown list in the navigation bar
   </span>
   
 
@@ -462,7 +455,7 @@
         
   
   <span class="md-ellipsis">
-    Topic 9: Change site fonts
+    Topic 9: Changing site fonts
   </span>
   
 
@@ -483,7 +476,7 @@
         
   
   <span class="md-ellipsis">
-    Topic 10: Add a table
+    Topic 10: Inserting tables
   </span>
   
 
@@ -531,7 +524,7 @@
         
   
   <span class="md-ellipsis">
-    Resources
+    Course Resources
   </span>
   
 
@@ -557,8 +550,6 @@
   
   
   
-    
-  
   
 </nav>
                   </div>
@@ -576,19 +567,24 @@
   
 
 
-<h1 id="topic-2-update-site-title-and-subtitle">Topic 2: Update site title and subtitle<a class="headerlink" href="#topic-2-update-site-title-and-subtitle" title="Permanent link">&para;</a></h1>
+  <h1>Topic 2: Update site title and subtitle</h1>
+
 <p style="color: #ba5e00"><b>TO UPDATE THIS PAGE:</b> Open and edit the <b>topic_2.md</b> file, in the <code>docs/</code> folder, to delete this placeholder text and customize with your own!</p>
 
-<p>One of the first things you'll want to do is update your site title, subtitle, and the short link on the right side of the navbar. </p>
+<p>One of the first things you'll want to do is update your site title, and description. </p>
 <p>Here's how:</p>
 <ul>
 <li>
-<p>The main title and subtitle for the home page live in the YAML of the <code>mkdocs.yml</code> file. Open it in your project, update the <code>title</code> and <code>description</code> fields in the YAML, save, then build and serve your site (run <code>mkdocs serve</code>) to see the updated title. Using <code>mkdocs serve -o</code> will automatically open a new web browser window.</p>
+<p>The main title and subtitle for the home page live in the YAML of the <code>mkdocs.yml</code> file. Open it in your project, update the <code>site_name</code> and <code>site_description</code> fields in the YAML. </p>
 </li>
 <li>
-<p>The label for the short link at the top of the page is specified in the <code>mkdocs.yml</code> page. Open the <code>mkdocs.yml</code> file in your project, update the <code>site_name</code> field, save, and rebuild the site to see your update.</p>
+<p>While editing this file, you should also update the <code>site_url</code> to match the base url that the site will have on github. This will mean changing the template <code>site_url</code> from <code>https://environmental-data-science.github.io/meds-mkdocs-template/</code> to your site's url, which will be:</p>
 </li>
 </ul>
+<pre><code class="language-md">https://&lt;your-github-username&gt;.github.io/&lt;your_site_repository&gt;/
+</code></pre>
+<p>Save, then build and serve your site (run <code>mkdocs serve</code>) to see the updated title. Using <code>mkdocs serve -o</code> will automatically open a new web browser window. </p>
+<p><strong>Note</strong>: The <code>site_name</code> field in the <code>mkdocs.yml</code> file is also used to determine the label for the short link at the top of the page and text text at the top of your navigation menu. </p>
 
 
 
@@ -614,11 +610,41 @@
         
       </main>
       
-        <footer class="md-footer">
-  
-  <div class="md-footer-meta md-typeset">
-    <div class="md-footer-meta__inner md-grid">
-      <div class="md-copyright">
+        <!--
+  Copyright (c) 2016-2024 Martin Donath <martin.donath@squidfunk.com>
+
+  Permission is hereby granted, free of charge, to any person obtaining a copy
+  of this software and associated documentation files (the "Software"), to
+  deal in the Software without restriction, including without limitation the
+  rights to use, copy, modify, merge, publish, distribute, sublicense, and/or
+  sell copies of the Software, and to permit persons to whom the Software is
+  furnished to do so, subject to the following conditions:
+
+  The above copyright notice and this permission notice shall be included in
+  all copies or substantial portions of the Software.
+
+  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+  FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT. IN NO EVENT SHALL THE
+  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+  FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
+  IN THE SOFTWARE.
+-->
+
+<!-- Footer -->
+<footer class="md-footer">
+
+    <!-- Link to previous and/or next page -->
+    
+
+    <!-- Further information -->
+    <div class="md-footer-meta md-typeset">
+        <div class="md-footer-meta__inner md-grid">
+            <div>
+<a href="https://bren.ucsb.edu/"><img src="/meds-mkdocs-template/assets/images/bren_white_logo.png" alt="Bren School logo" style="width:350px;" /></a>
+</div>
+            <div class="md-copyright">
   
   
     Made with
@@ -627,9 +653,11 @@
     </a>
   
 </div>
-      
+
+            <!-- Social links -->
+            
+        </div>
     </div>
-  </div>
 </footer>
       
     </div>

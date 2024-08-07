@@ -24,7 +24,7 @@
     
     
       
-        <title>Topic 8: Dropdown list from a navigation bar item - EDS 123</title>
+        <title>Topic 8: Creating a dropdown list in the navigation bar - EDS 123</title>
       
     
     
@@ -70,7 +70,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#topic-8-dropdown-list-from-a-navigation-bar-item" class="md-skip">
+        <a href="#creating-dropdown-menus" class="md-skip">
           Skip to content
         </a>
       
@@ -106,7 +106,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Topic 8: Dropdown list from a navigation bar item
+              Topic 8: Creating a dropdown list in the navigation bar
             
           </span>
         </div>
@@ -284,7 +284,7 @@
         
   
   <span class="md-ellipsis">
-    Topic 1: Add a new site page
+    Topic 1: Add/remove a site page
   </span>
   
 
@@ -305,7 +305,7 @@
         
   
   <span class="md-ellipsis">
-    Topic 2: Update site title & subtitle
+    Topic 2: Update site title and subtitle
   </span>
   
 
@@ -326,7 +326,7 @@
         
   
   <span class="md-ellipsis">
-    Topic 3: Add images
+    Topic 3: Adding images
   </span>
   
 
@@ -433,18 +433,53 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
-        
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Topic 8: Creating a dropdown list in the navigation bar
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
-    Topic 8: Add a dropdown menu from navigation bar item
+    Topic 8: Creating a dropdown list in the navigation bar
   </span>
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#creating-dropdown-menus" class="md-nav__link">
+    <span class="md-ellipsis">
+      Creating Dropdown Menus
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -462,7 +497,7 @@
         
   
   <span class="md-ellipsis">
-    Topic 9: Change site fonts
+    Topic 9: Changing site fonts
   </span>
   
 
@@ -483,7 +518,7 @@
         
   
   <span class="md-ellipsis">
-    Topic 10: Add a table
+    Topic 10: Inserting tables
   </span>
   
 
@@ -531,7 +566,7 @@
         
   
   <span class="md-ellipsis">
-    Resources
+    Course Resources
   </span>
   
 
@@ -557,8 +592,23 @@
   
   
   
-    
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#creating-dropdown-menus" class="md-nav__link">
+    <span class="md-ellipsis">
+      Creating Dropdown Menus
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -576,27 +626,52 @@
   
 
 
-<h1 id="topic-8-dropdown-list-from-a-navigation-bar-item">Topic 8: Dropdown list from a navigation bar item<a class="headerlink" href="#topic-8-dropdown-list-from-a-navigation-bar-item" title="Permanent link">&para;</a></h1>
+  <h1>Topic 8: Creating a dropdown list in the navigation bar</h1>
+
 <p style="color: #ba5e00"><b>TO UPDATE THIS PAGE:</b> Open and edit the <b>topic_8.md</b> file, in <code>docs/</code> folder, to delete this placeholder text and customize with your own!</p>
 
-<p>If you look at this template, you'll notice that some navigation bar items go directly to a single page, while the Modules item takes you to a dropdown menu. </p>
-<p>To create a dropdown menu of pages: </p>
+<p>If you look at this MkDocs template, you'll notice that some navigation bar items link directly to a single page, while the "Topics" item takes you to a dropdown menu.</p>
+<h3 id="creating-dropdown-menus">Creating Dropdown Menus<a class="headerlink" href="#creating-dropdown-menus" title="Permanent link">&para;</a></h3>
+<p>To create a dropdown menu of pages in MkDocs:</p>
 <ol>
-<li>
-<p>Create and save the pages as individual R Markdown documents as described <a href="../topic_1/">here</a>.</p>
-</li>
-<li>
-<p>Open the <code>_site.yml</code> file. In the <code>navbar</code> section, create a menu with the pages as linked items using a structure like this: </p>
-</li>
+<li><strong>Create and Save Pages</strong>:</li>
+<li>Create and save your pages as individual Markdown (<code>.md</code>) documents. Make sure each Markdown file has a YAML front matter at the top specifying the page title, like this:</li>
 </ol>
-<pre><code>   - text: &quot;Dropdown menu&quot;
-      menu:
-        - text: &quot;First dropdown item&quot;
-          href: item_1.html
-        - text: &quot;Second dropdown item&quot;
-          href: item_2.html
+<pre><code class="language-yaml">---
+title: &quot;Your Page Title&quot;
+---
+
+## Content of your page
+
 </code></pre>
-<p>The example above would only work if the new pages were created as <code>item_1.md</code> and <code>item_2.md</code>, so that when the site is built the rendered <code>item_1.html</code> and <code>item_2.html</code> files exist in the <code>docs</code> output directory.</p>
+<ol>
+<li><strong>Edit <code>mkdocs.yml</code></strong>:</li>
+<li>Open the <code>mkdocs.yml</code> file in the root of your MkDocs project.</li>
+<li>In the <code>nav</code> section, create a menu with the pages by specifying only the filename. MkDocs will automatically read the page title from the YAML front matter in each Markdown file:</li>
+</ol>
+<pre><code class="language-yaml">    nav:
+    - Home: index.md
+    - Dropdown menu:
+        - item_1.md
+        - item_2.md
+</code></pre>
+<ul>
+<li>
+<p>This approach allows MkDocs to dynamically populate the menu titles based on the content of each Markdown file, making it easier to manage titles directly within the pages.</p>
+</li>
+<li>
+<p><strong>File Naming</strong>:</p>
+</li>
+<li>
+<p>Ensure that your new pages are correctly named, such as <code>item_1.md</code> and <code>item_2.md</code> (or any names you choose), to match the links specified in the <code>mkdocs.yml</code> file.</p>
+</li>
+<li>
+<p><strong>Save Changes and Build the Site</strong>:</p>
+</li>
+<li>Save your changes to the <code>mkdocs.yml</code> file.</li>
+<li>Run <code>mkdocs serve</code> to preview your site locally and ensure the dropdown menu works as expected.</li>
+<li>Once you're satisfied, deploy your site using <code>mkdocs gh-deploy</code>.</li>
+</ul>
 
 
 
@@ -622,11 +697,41 @@
         
       </main>
       
-        <footer class="md-footer">
-  
-  <div class="md-footer-meta md-typeset">
-    <div class="md-footer-meta__inner md-grid">
-      <div class="md-copyright">
+        <!--
+  Copyright (c) 2016-2024 Martin Donath <martin.donath@squidfunk.com>
+
+  Permission is hereby granted, free of charge, to any person obtaining a copy
+  of this software and associated documentation files (the "Software"), to
+  deal in the Software without restriction, including without limitation the
+  rights to use, copy, modify, merge, publish, distribute, sublicense, and/or
+  sell copies of the Software, and to permit persons to whom the Software is
+  furnished to do so, subject to the following conditions:
+
+  The above copyright notice and this permission notice shall be included in
+  all copies or substantial portions of the Software.
+
+  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+  FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT. IN NO EVENT SHALL THE
+  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+  FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
+  IN THE SOFTWARE.
+-->
+
+<!-- Footer -->
+<footer class="md-footer">
+
+    <!-- Link to previous and/or next page -->
+    
+
+    <!-- Further information -->
+    <div class="md-footer-meta md-typeset">
+        <div class="md-footer-meta__inner md-grid">
+            <div>
+<a href="https://bren.ucsb.edu/"><img src="/meds-mkdocs-template/assets/images/bren_white_logo.png" alt="Bren School logo" style="width:350px;" /></a>
+</div>
+            <div class="md-copyright">
   
   
     Made with
@@ -635,9 +740,11 @@
     </a>
   
 </div>
-      
+
+            <!-- Social links -->
+            
+        </div>
     </div>
-  </div>
 </footer>
       
     </div>
