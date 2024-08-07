@@ -26,6 +26,9 @@ markdown_extensions:
   - admonition
 extra_css: 
   - assets/css/theme.css
+  - assets/css/extra.css
+extra_javascript:
+  - assets/js/set_base_url.js  # custom script to set base paths
 plugins:
   - search 
   - macros

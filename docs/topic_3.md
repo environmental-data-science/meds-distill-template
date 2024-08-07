@@ -9,51 +9,52 @@ title: "Topic 3: Adding images"
 
 ## Where should I save my images?
 
-Drop images you want to include on your site into the existing `img` folder within your R Project (or make your own folder for images, set up a subfolder structure, etc.) - as long as you can easily point to them within your project. 
+Drop images you want to include on your site into the existing `docs/assets/images` folder within this template repository. 
 
 ## How do I make images show up on my site? 
 
-There are a bunch of ways to add images in an R Markdown document (see more examples from the R Markdown Cookbook [here](https://bookdown.org/yihui/rmarkdown-cookbook/figure-size.html)). 
+There are few ways to add images in an markdown document. I recommend using the standard `![Description of the image](assets/images/new_image.jpg)`. 
 
-I recommend using `knitr::include_graphics("path_to_image")`. 
-
-For example, if there is an image saved as `cool_dogs.jpg` in the `img` folder, then you can add this to your R Markdown document by adding (within a code chunk): 
+For example, if there is an image saved as `cool_dogs.jpg` in the `docs/assets/images` folder, then you can add this to your markdown document by adding: 
 
 ````md
-
-```{r, echo = FALSE}`r ''`
-  knitr::include_graphics("img/cool_dogs.jpg")
-```
-
+![These are cool dogs!](assets/images/cool_dogs.jpg)
 ````
 
-You can also update the size of the image, add a caption, etc. by updating the code chunk header, e.g.:
+You can also update the size of the image, add a caption, etc... by using an html `<figure>` tag directly inside your markdown file (`mkdocs` can parse `html` code as well as markdown!), e.g.:
 
 ````md
-
-```{r, echo = FALSE, out.width = "50%", fig.cap = "Some cool dogs!"}`r ''`
-  knitr::include_graphics("img/cool_dogs.jpg")
-```
-
+<figure>
+<img src="/assets/images/cool_dogs.jpg"  style="width: 50%;">
+<figcaption>Check out these cool dogs!</figcaption>
+</figure>
 ````
 
-For example, the image `usgs_sat.jpeg` is in the `img` folder of this template. I can have it show up here by include a code chunk that looks like this: 
+**NOTE:** Notice that the path to the image file in the `<img>` tag's `src=` has a leading `/`, whereas the markdown code does not. This is due to subtle differences in how markdown and html code are parsed in `mkdocs`. 
+
+For example, the image `usgs_sat.jpeg` is in the `/docs/assets/images` folder of this repo. I can have it show up here by include a code chunk that looks like this: 
 
 ````md
-
-```{r, echo = FALSE, out.width = "80%", fig.cap = "USGS image of Mississippi River."}`r ''`
-  knitr::include_graphics("img/usgs_sat.jpeg")
-```
-
+![Mississippi River south of Memphis, TN](assets/images/usgs_sat.jpeg)
 ````
 
-Which creates: 
+Which creates:
+![Mississippi River south of Memphis, TN](assets/images/usgs_sat.jpeg)
 
-```{r, echo = FALSE, out.width = "80%", fig.cap = "USGS image of Mississippi River."}
+Or, I could use:
 
-knitr::include_graphics("img/usgs_sat.jpeg")
+````html
+<figure>
+<img src="/assets/images/usgs_sat.jpeg"  style="width: 100%;">
+<figcaption>Update this image by dropping your new image into the docs/assets/images folder of the project, then open the index.md & change the path to point to the new image. Image: Mississippi River south of Memphis, TN, from USGS shared on Unsplash</figcaption>
+</figure>
+````
+Which creates:
 
-```
+<figure>
+<img src="/assets/images/usgs_sat.jpeg"  style="width: 100%;">
+<figcaption>Image: Mississippi River south of Memphis, TN, from USGS shared on Unsplash</figcaption>
+</figure>
 
 
 
