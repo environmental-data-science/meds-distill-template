@@ -49,6 +49,8 @@
     
       <link rel="stylesheet" href="../assets/css/theme.css">
     
+      <link rel="stylesheet" href="../assets/css/extra.css">
+    
     <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
@@ -652,36 +654,35 @@
 <p style="color: #ba5e00"><b>TO UPDATE THIS PAGE:</b> Open and edit the <b>topic_3.md</b> file, in <code>docs/</code> folder, to delete this placeholder text and customize with your own!</p>
 
 <h2 id="where-should-i-save-my-images">Where should I save my images?<a class="headerlink" href="#where-should-i-save-my-images" title="Permanent link">&para;</a></h2>
-<p>Drop images you want to include on your site into the existing <code>img</code> folder within your R Project (or make your own folder for images, set up a subfolder structure, etc.) - as long as you can easily point to them within your project. </p>
+<p>Drop images you want to include on your site into the existing <code>docs/assets/images</code> folder within this template repository. </p>
 <h2 id="how-do-i-make-images-show-up-on-my-site">How do I make images show up on my site?<a class="headerlink" href="#how-do-i-make-images-show-up-on-my-site" title="Permanent link">&para;</a></h2>
-<p>There are a bunch of ways to add images in an R Markdown document (see more examples from the R Markdown Cookbook <a href="https://bookdown.org/yihui/rmarkdown-cookbook/figure-size.html">here</a>). </p>
-<p>I recommend using <code>knitr::include_graphics("path_to_image")</code>. </p>
-<p>For example, if there is an image saved as <code>cool_dogs.jpg</code> in the <code>img</code> folder, then you can add this to your R Markdown document by adding (within a code chunk): </p>
-<pre><code class="language-md">
-```{r, echo = FALSE}`r ''`
-  knitr::include_graphics(&quot;img/cool_dogs.jpg&quot;)
-```
-
+<p>There are few ways to add images in an markdown document. I recommend using the standard <code>![Description of the image](assets/images/new_image.jpg)</code>. </p>
+<p>For example, if there is an image saved as <code>cool_dogs.jpg</code> in the <code>docs/assets/images</code> folder, then you can add this to your markdown document by adding: </p>
+<pre><code class="language-md">![These are cool dogs!](assets/images/cool_dogs.jpg)
 </code></pre>
-<p>You can also update the size of the image, add a caption, etc. by updating the code chunk header, e.g.:</p>
-<pre><code class="language-md">
-```{r, echo = FALSE, out.width = &quot;50%&quot;, fig.cap = &quot;Some cool dogs!&quot;}`r ''`
-  knitr::include_graphics(&quot;img/cool_dogs.jpg&quot;)
-```
-
+<p>You can also update the size of the image, add a caption, etc... by using an html <code>&lt;figure&gt;</code> tag directly inside your markdown file (<code>mkdocs</code> can parse <code>html</code> code as well as markdown!), e.g.:</p>
+<pre><code class="language-md">&lt;figure&gt;
+&lt;img src=&quot;/assets/images/cool_dogs.jpg&quot;  style=&quot;width: 50%;&quot;&gt;
+&lt;figcaption&gt;Check out these cool dogs!&lt;/figcaption&gt;
+&lt;/figure&gt;
 </code></pre>
-<p>For example, the image <code>usgs_sat.jpeg</code> is in the <code>img</code> folder of this template. I can have it show up here by include a code chunk that looks like this: </p>
-<pre><code class="language-md">
-```{r, echo = FALSE, out.width = &quot;80%&quot;, fig.cap = &quot;USGS image of Mississippi River.&quot;}`r ''`
-  knitr::include_graphics(&quot;img/usgs_sat.jpeg&quot;)
-```
-
+<p><strong>NOTE:</strong> Notice that the path to the image file in the <code>&lt;img&gt;</code> tag's <code>src=</code> has a leading <code>/</code>, whereas the markdown code does not. This is due to subtle differences in how markdown and html code are parsed in <code>mkdocs</code>. </p>
+<p>For example, the image <code>usgs_sat.jpeg</code> is in the <code>/docs/assets/images</code> folder of this repo. I can have it show up here by include a code chunk that looks like this: </p>
+<pre><code class="language-md">![Mississippi River south of Memphis, TN](assets/images/usgs_sat.jpeg)
 </code></pre>
-<p>Which creates: </p>
-<pre><code>
-knitr::include_graphics(&quot;img/usgs_sat.jpeg&quot;)
-
+<p>Which creates:
+<img alt="Mississippi River south of Memphis, TN" src="../assets/images/usgs_sat.jpeg" /></p>
+<p>Or, I could use:</p>
+<pre><code class="language-html">&lt;figure&gt;
+&lt;img src=&quot;/assets/images/usgs_sat.jpeg&quot;  style=&quot;width: 100%;&quot;&gt;
+&lt;figcaption&gt;Update this image by dropping your new image into the docs/assets/images folder of the project, then open the index.md &amp; change the path to point to the new image. Image: Mississippi River south of Memphis, TN, from USGS shared on Unsplash&lt;/figcaption&gt;
+&lt;/figure&gt;
 </code></pre>
+<p>Which creates:</p>
+<figure>
+<img src="/assets/images/usgs_sat.jpeg"  style="width: 100%;">
+<figcaption>Image: Mississippi River south of Memphis, TN, from USGS shared on Unsplash</figcaption>
+</figure>
 
 
 
@@ -735,6 +736,8 @@ knitr::include_graphics(&quot;img/usgs_sat.jpeg&quot;)
     
     
       <script src="../assets/javascripts/bundle.fe8b6f2b.min.js"></script>
+      
+        <script src="../assets/js/set_base_url.js"></script>
       
     
   </body>

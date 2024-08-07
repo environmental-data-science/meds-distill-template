@@ -49,6 +49,8 @@
     
       <link rel="stylesheet" href="../assets/css/theme.css">
     
+      <link rel="stylesheet" href="../assets/css/extra.css">
+    
     <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
@@ -581,10 +583,10 @@
 <p>Here's how:</p>
 <ul>
 <li>
-<p>The main title and subtitle for the home page live in the YAML of the <code>mkdocs.yml</code> file. Open it in your project, update the <code>title</code> and <code>description</code> fields in the YAML, save, then build your site (run <code>mkdocs build</code> at the command line in your project root directory) to see the updated title.</p>
+<p>The main title and subtitle for the home page live in the YAML of the <code>mkdocs.yml</code> file. Open it in your project, update the <code>title</code> and <code>description</code> fields in the YAML, save, then build and serve your site (run <code>mkdocs serve</code>) to see the updated title. Using <code>mkdocs serve -o</code> will automatically open a new web browser window.</p>
 </li>
 <li>
-<p>The label for the short link in the upper right of the page (right side of the navigation bar) is specified in the <code>mkdocs.yml</code> page. Open the <code>mkdocs.yml</code> file in your project, update the <code>site_name</code> field, save, and rebuild the site to see your update.</p>
+<p>The label for the short link at the top of the page is specified in the <code>mkdocs.yml</code> page. Open the <code>mkdocs.yml</code> file in your project, update the <code>site_name</code> field, save, and rebuild the site to see your update.</p>
 </li>
 </ul>
 
@@ -640,6 +642,8 @@
     
     
       <script src="../assets/javascripts/bundle.fe8b6f2b.min.js"></script>
+      
+        <script src="../assets/js/set_base_url.js"></script>
       
     
   </body>

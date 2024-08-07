@@ -1,0 +1,11 @@
+/* Ensure code blocks are left-justified */
+pre code {
+    text-align: left;
+}
+
+/* Remove any unwanted margins or padding */
+pre {
+    text-align: left;
+    margin: 0;
+    padding: 10px;
+}
