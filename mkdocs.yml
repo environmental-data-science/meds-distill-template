@@ -1,6 +1,6 @@
 site_name: EDS 123
-site_description: MEDS Courses distill template
-site_url: https://example.com  # Update this with the actual URL
+site_description: MEDS Courses mkdocs template
+site_url: https://environmental-data-science.github.io/meds-mkdocs-template/  # Update this with the actual URL
 repo_url: https://github.com/environmental-data-science/meds-distill-template # Update this with the actual URL
 theme:
   name: material

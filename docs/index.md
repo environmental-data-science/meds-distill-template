@@ -1,7 +1,6 @@
 ---
 title: "EDS 123: Optional MEDS Template"
 description: "A minimal website skeleton and theme for MEDS course with `mkdocs`"
-site: distill::distill_website
 ---
 
 <!--
@@ -18,32 +17,32 @@ UPDATE IMAGE HERE
 {{ get_description(page) }}
 
 <figure>
-<img src="../assets/images/usgs_sat.jpeg"  style="width: 100%;">
+<img src="assets/images/usgs_sat.jpeg"  style="width: 100%;">
 <figcaption>Update this image by dropping your new image into the docs/assets/images folder of the project, then open the index.md & change the path to point to the new image. Image: Mississippi River south of Memphis, TN, from USGS shared on Unsplash</figcaption>
 </figure>
 <!--
 or copy/paste this code elsewhere, updating the file path, to add other images to your site!
  
- ![Description of the image](../assets/images/usgs_sat.jpeg)
+ ![Description of the image](assets/images/usgs_sat.jpeg)
 
 You can also use html if you want to control more aspects of image presentation:
  
- <img src="../assets/images/usgs_sat.jpeg" alt="Description of the image" style="width: 100%;">
+ <img src="assets/images/usgs_sat.jpeg" alt="Description of the image" style="width: 100%;">
 -->
 
 ## Welcome to the MEDS `mkdocs` template
 
 Welcome to the MEDS Course Website template! This template is made with [MkDocs](https://www.mkdocs.org), a a fast, simple and downright gorgeous static site generator that's geared towards building project documentation. This method for creating a course website may make the most sense for MEDS teachers who are familiar with python, Markdown, git and GitHub (or who want to learn!). For those of you who do *not* want to create your website with mkdocs, but still want a course website, check out [Course-in-a-Box](https://course-in-a-box.p2pu.org/) to create a site with no prior coding experience.
 
-For those wanting to take the distill/R websites path: this template acts as both a starting point for your site, and place to learn basics ways to customize it (different topics currently populate the different modules, which I expect teachers will replace with different weeks or lessons or topics as useful for your courses). 
+For those wanting to take the mkdocs path: this template acts as both a starting point for your site, and place to learn basics ways to customize it (different topics currently populate the different modules, which I expect teachers will replace with different weeks or lessons or topics as useful for your courses). 
 
 ### Some starting points:
 
-- Follow along with the "Getting started with the MEDS distill template" (COMING SOON) instructions to set up your own distill website. Please reach out to Allison for help getting your website started, and submit problems and suggestions as issues [here](https://github.com/allisonhorst/meds-distill-template). 
+- Follow along with the ["Getting started with the MEDS mkdocs template"](https://docs.google.com/document/d/1OHGHC_d0e14eNaEQA9zuZaowKjsgF1_r27slMpw-8Pk/edit?usp=sharing) instructions to set up your own `mkdocs` website. Please reach out to Kelly for help getting your website started, and submit problems and suggestions as issues [here](https://github.com/environmental-data-science/meds-mkdocs-template). 
 
 - The "Weekly materials" section of this template site can be updated with your course materials, but also in this template serves the additional purpose of showing you how to customize some things on your page.
 
-- See the [EDS 212 Website](https://allisonhorst.github.io/EDS_212_essential-math/) for an example of what a customized live course site can look like using this template.
+- See the [EDS 217 Website](https://environmental-data-science.github.io/EDS_217_essential-python/) for an example of what a customized live course site can look like using this template.
 
 <p style="color: #ba5e00"><b>TO UPDATE THIS PAGE:</b> Open and edit the <b>index.md</b> file, in the project root, to delete this placeholder text and customize with your own!</p>
 
