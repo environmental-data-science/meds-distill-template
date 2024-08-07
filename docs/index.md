@@ -54,12 +54,12 @@ Add your course description here.
 
 ## Teaching team
 
-**Instructor:** Mike Wazowski (wazowski\@monstersinc.org)
+**Instructor:** Mike Wazowski (wazowski@monstersinc.org)
 
 -   **Office:** Closet 100
 -   **Office hours:** Friday 9pm - 11pm
 
-**Teaching assistant:** Boo (boo\@monstersinc.org)
+**Teaching assistant:** Boo (boo@monstersinc.org)
 
 -   **Office:** Boo's Room
 -   **Office hours:** Saturday 7am - 8am
