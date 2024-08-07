@@ -1,7 +1,13 @@
+# Update this with your course (e.g. EDS XXX)
 site_name: EDS 123
+# Update this with your course name (e.g. Essential Python for Data Scientists)
 site_description: MEDS Courses mkdocs template
-site_url: https://environmental-data-science.github.io/meds-mkdocs-template/  # Update this with the actual URL
-repo_url: https://github.com/environmental-data-science/meds-distill-template # Update this with the actual URL
+# Update this with the actual URL (will be hosted at your github pages site)
+site_url: https://<YOUR_USER_NAME>.github.io/<REPO_NAME>/  
+# Update this with the actual URL to the repo
+repo_url: https://github.com/<YOUR_USER_NAME>/<REPO_NAME>
+
+# You shouldn't need to edit these:
 theme:
   name: material
   logo: assets/images/bren_white_icon.png
@@ -10,6 +16,8 @@ theme:
   toc:
     enabled: true
 docs_dir: 'docs'
+
+# Update the nav items as you build your course materials (i.e. add/remove pages)
 nav:
   - Home: index.md
   - Topics:
@@ -25,6 +33,8 @@ nav:
       - topic_10.md
   - assignments.md
   - resources.md
+
+# You shouldn't need to edit these:
 markdown_extensions:
   - toc:
       permalink: true
@@ -36,4 +46,3 @@ extra_javascript:
   - assets/js/set_base_url.js  # custom script to set base paths
 plugins:
   - search 
-
