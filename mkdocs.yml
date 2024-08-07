@@ -4,6 +4,8 @@ site_url: https://environmental-data-science.github.io/meds-mkdocs-template/  # 
 repo_url: https://github.com/environmental-data-science/meds-distill-template # Update this with the actual URL
 theme:
   name: material
+  logo: assets/images/bren_white_icon.png
+  favicon: assets/images/favicon.ico
   custom_dir: 'overrides'
   toc:
     enabled: true

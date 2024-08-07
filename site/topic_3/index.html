@@ -19,7 +19,7 @@
         <link rel="next" href="../topic_4/">
       
       
-      <link rel="icon" href="../assets/images/favicon.png">
+      <link rel="icon" href="../assets/images/favicon.ico">
       <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.31">
     
     
@@ -88,8 +88,7 @@
   <nav class="md-header__inner md-grid" aria-label="Header">
     <a href=".." title="EDS 123" class="md-header__button md-logo" aria-label="EDS 123" data-md-component="logo">
       
-  
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+  <img src="../assets/images/bren_white_icon.png" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -195,8 +194,7 @@
   <label class="md-nav__title" for="__drawer">
     <a href=".." title="EDS 123" class="md-nav__button md-logo" aria-label="EDS 123" data-md-component="logo">
       
-  
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+  <img src="../assets/images/bren_white_icon.png" alt="logo">
 
     </a>
     EDS 123
@@ -657,13 +655,13 @@
 </code></pre>
 <p>You can also update the size of the image, add a caption, etc... by using an html <code>&lt;figure&gt;</code> tag directly inside your markdown file (<code>mkdocs</code> can parse <code>html</code> code as well as markdown!), e.g.:</p>
 <pre><code class="language-md">&lt;figure&gt;
-    &lt;img src=&quot;/assets/images/cool_dogs.jpg&quot;  style=&quot;width: 50%;&quot;&gt;
+    &lt;img src=&quot;/meds-mkdocs-template/assets/images/cool_dogs.jpg&quot;  style=&quot;width: 50%;&quot;&gt;
         &lt;figcaption&gt;
             Check out these cool dogs!
         &lt;/figcaption&gt;
 &lt;/figure&gt;
 </code></pre>
-<p><strong>NOTE:</strong> Notice that the path to the image file in the <code>&lt;img&gt;</code> tag's <code>src=</code> has a leading <code>/</code>, whereas the markdown code does not. This is due to subtle differences in how markdown and html code are parsed in <code>mkdocs</code>. </p>
+<p><strong>NOTE:</strong> Notice that the path to the image file in the <code>&lt;img&gt;</code> tag's <code>src=</code> has a leading <code>/meds-mkdocs-template/</code>, whereas the markdown code does not. This is due to subtle differences in how markdown and html code are parsed in <code>mkdocs</code>. </p>
 <p>For example, the image <code>usgs_sat.jpeg</code> is in the <code>/docs/assets/images</code> folder of this repo. I can have it show up here by include a code chunk that looks like this: </p>
 <pre><code class="language-md">![Mississippi River south of Memphis, TN](assets/images/usgs_sat.jpeg)
 </code></pre>
@@ -671,7 +669,7 @@
 <img alt="Mississippi River south of Memphis, TN" src="../assets/images/usgs_sat.jpeg" /></p>
 <p>Or, I could use:</p>
 <pre><code class="language-html">&lt;figure&gt;
-    &lt;img src=&quot;/assets/images/usgs_sat.jpeg&quot;  style=&quot;width: 100%;&quot;&gt;
+    &lt;img src=&quot;/meds-mkdocs-template/assets/images/usgs_sat.jpeg&quot;  style=&quot;width: 100%;&quot;&gt;
         &lt;figcaption&gt;
             Update this image by dropping your new image into 
             the docs/assets/images folder of the project, then open 
@@ -683,7 +681,7 @@
 </code></pre>
 <p>Which also creates:</p>
 <figure>
-<img src="/assets/images/usgs_sat.jpeg"  style="width: 100%;">
+<img src="/meds-mkdocs-template/assets/images/usgs_sat.jpeg"  style="width: 100%;">
 <figcaption>Image: Mississippi River south of Memphis, TN, from USGS shared on Unsplash</figcaption>
 </figure>
 
@@ -711,11 +709,41 @@
         
       </main>
       
-        <footer class="md-footer">
-  
-  <div class="md-footer-meta md-typeset">
-    <div class="md-footer-meta__inner md-grid">
-      <div class="md-copyright">
+        <!--
+  Copyright (c) 2016-2024 Martin Donath <martin.donath@squidfunk.com>
+
+  Permission is hereby granted, free of charge, to any person obtaining a copy
+  of this software and associated documentation files (the "Software"), to
+  deal in the Software without restriction, including without limitation the
+  rights to use, copy, modify, merge, publish, distribute, sublicense, and/or
+  sell copies of the Software, and to permit persons to whom the Software is
+  furnished to do so, subject to the following conditions:
+
+  The above copyright notice and this permission notice shall be included in
+  all copies or substantial portions of the Software.
+
+  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+  FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT. IN NO EVENT SHALL THE
+  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+  FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
+  IN THE SOFTWARE.
+-->
+
+<!-- Footer -->
+<footer class="md-footer">
+
+    <!-- Link to previous and/or next page -->
+    
+
+    <!-- Further information -->
+    <div class="md-footer-meta md-typeset">
+        <div class="md-footer-meta__inner md-grid">
+            <div>
+<a href="https://bren.ucsb.edu/"><img src="/meds-mkdocs-template/assets/images/bren_white_logo.png" alt="Bren School logo" style="width:350px;" /></a>
+</div>
+            <div class="md-copyright">
   
   
     Made with
@@ -724,9 +752,11 @@
     </a>
   
 </div>
-      
+
+            <!-- Social links -->
+            
+        </div>
     </div>
-  </div>
 </footer>
       
     </div>
