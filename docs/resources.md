@@ -1,10 +1,9 @@
 ---
-title: "Course resources"
+title: "Course Resources"
+description: "Helpful links for learning more about mkdocs"
 ---
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
-```
+
 <p style="color: #ba5e00"><b>TO UPDATE THIS PAGE:</b> Open and edit the <b>resources.md</b> file, in <code>docs/</code> folder, to delete this placeholder text and customize with your own!</p>
 
 ### More on `mkdocs`

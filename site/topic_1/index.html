@@ -70,7 +70,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#topic-1-addremove-a-site-page" class="md-skip">
+        <a href="#add-a-site-page" class="md-skip">
           Skip to content
         </a>
       
@@ -286,14 +286,12 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
-        
-      
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
           
   
   <span class="md-ellipsis">
-    Topic 1: Add a new site page
+    Topic 1: Add/remove a site page
   </span>
   
 
@@ -304,7 +302,7 @@
         
   
   <span class="md-ellipsis">
-    Topic 1: Add a new site page
+    Topic 1: Add/remove a site page
   </span>
   
 
@@ -315,8 +313,6 @@
 <nav class="md-nav md-nav--secondary" aria-label="Table of contents">
   
   
-  
-    
   
   
     <label class="md-nav__title" for="__toc">
@@ -347,7 +343,7 @@
           <li class="md-nav__item">
   <a href="#make-each-page-a-markdown-document" class="md-nav__link">
     <span class="md-ellipsis">
-      Make each page a Markdown document
+      Make Each Page a Markdown Document
     </span>
   </a>
   
@@ -396,7 +392,7 @@
         
   
   <span class="md-ellipsis">
-    Topic 2: Update site title & subtitle
+    Topic 2: Update site title and subtitle
   </span>
   
 
@@ -417,7 +413,7 @@
         
   
   <span class="md-ellipsis">
-    Topic 3: Add images
+    Topic 3: Adding images
   </span>
   
 
@@ -522,7 +518,7 @@
         
   
   <span class="md-ellipsis">
-    Topic 8: Add a dropdown menu from navigation bar item
+    Topic 8: Creating a dropdown list in the navigation bar
   </span>
   
 
@@ -543,7 +539,7 @@
         
   
   <span class="md-ellipsis">
-    Topic 9: Change site fonts
+    Topic 9: Changing site fonts
   </span>
   
 
@@ -564,7 +560,7 @@
         
   
   <span class="md-ellipsis">
-    Topic 10: Add a table
+    Topic 10: Inserting tables
   </span>
   
 
@@ -612,7 +608,7 @@
         
   
   <span class="md-ellipsis">
-    Resources
+    Course Resources
   </span>
   
 
@@ -637,8 +633,6 @@
 <nav class="md-nav md-nav--secondary" aria-label="Table of contents">
   
   
-  
-    
   
   
     <label class="md-nav__title" for="__toc">
@@ -669,7 +663,7 @@
           <li class="md-nav__item">
   <a href="#make-each-page-a-markdown-document" class="md-nav__link">
     <span class="md-ellipsis">
-      Make each page a Markdown document
+      Make Each Page a Markdown Document
     </span>
   </a>
   
@@ -716,8 +710,8 @@
   
 
 
-<h1 id="topic-1-addremove-a-site-page">Topic 1: Add/remove a site page<a class="headerlink" href="#topic-1-addremove-a-site-page" title="Permanent link">&para;</a></h1>
-<p>Basic information on managing site pages</p>
+  <h1>Topic 1: Add/remove a site page</h1>
+
 <p><strong>NOTE:</strong> There are 10 toy Topic sections here, expecting that some teachers may want to have one page per week (for a 10 week course). You are encouraged to structure your course <strong>however works best for your class</strong>. All of your course information could be on a single page, or you might have a different number of topics, or organize weekly, or any other organization that works for you.</p>
 <p style="color: #ba5e00"><b>TO UPDATE THIS PAGE:</b> Open and edit the <b>topic_1.md</b> file, in <code>docs/</code> folder, to delete this placeholder text and customize with your own!</p>
 
@@ -729,34 +723,72 @@
 <li>Build to see updated site</li>
 </ul>
 <p>Below for a bit more detail...</p>
-<h3 id="make-each-page-a-markdown-document">Make each page a Markdown document<a class="headerlink" href="#make-each-page-a-markdown-document" title="Permanent link">&para;</a></h3>
-<p>To make a new page:</p>
+<h3 id="make-each-page-a-markdown-document">Make Each Page a Markdown Document<a class="headerlink" href="#make-each-page-a-markdown-document" title="Permanent link">&para;</a></h3>
+<p>To create a new page for your MkDocs site:</p>
 <ol>
+<li><strong>Create a New Markdown File</strong>:</li>
 <li>
-<p>Within your website <code>docs/</code> folder, create a new <code>.md</code> file. Save it in the <code>docs/</code> folder. For this example, let's say you've saved it as <code>new_page.md.</code></p>
+<p>Within your website's <code>docs/</code> folder, create a new <code>.md</code> file. Save it in the <code>docs/</code> folder. For this example, let's say you've saved it as <code>new_page.md</code>.</p>
 </li>
 <li>
-<p>In that .md file, remove everything but the title (which you can change) from the YAML - that's the top section of the .md, where by default it has title, author, date, etc.</p>
+<p><strong>Add YAML Front Matter</strong>:</p>
 </li>
-<li>
-<p>Update the .md to contain whatever you want to have on that page. Don't know a lot about markdown? Considering switching over to VSCode, which has built in support for .md files, including previews. </p>
-</li>
-<li>
-<p>Save the .md</p>
-</li>
+<li>At the top of your <code>.md</code> file, add YAML front matter to define the page title and any other metadata you need. The YAML front matter is the section enclosed between <code>---</code> lines at the top of the file. Here's a basic example:</li>
 </ol>
+<pre><code class="language-yaml">---
+title: &quot;Your Page Title&quot;
+---
+
+</code></pre>
+<ul>
+<li>
+<p>You can customize the <code>title</code> field to match what you want to appear in the navigation bar and the page title. You may include other optional metadata like <code>description</code> or <code>author</code> if needed.</p>
+</li>
+<li>
+<p><strong>Update the Content</strong>:</p>
+</li>
+<li>
+<p>After the YAML front matter, add the content you want on that page. Write your content using Markdown syntax. If you're not familiar with Markdown, consider using a text editor like VSCode, which offers built-in support for Markdown files, including previews.</p>
+</li>
+<li>
+<p>Here’s a simple Markdown example:</p>
+</li>
+</ul>
+<pre><code class="language-markdown">---
+title: &quot;Your Page Title&quot;
+---
+
+# Welcome to New Page
+
+This is your new page content. You can add text, images, lists, and more using Markdown syntax.
+
+## Subheading
+
+Add more detailed information under different sections as needed.
+</code></pre>
+<ol>
+<li><strong>Save the File</strong>:</li>
+<li>
+<p>Save the <code>.md</code> file with your changes.</p>
+</li>
+<li>
+<p><strong>Preview Your Site</strong>:</p>
+</li>
+<li>Run <code>mkdocs serve</code> in your terminal to preview your site locally and ensure your new page appears correctly with the specified title.</li>
+</ol>
+<p>By following these steps, you can effectively create and manage pages for your MkDocs site, using the YAML front matter to control page titles and other metadata. This approach ensures consistency and clarity across your documentation project.</p>
 <h3 id="add-it-to-your-navigation-bar">Add it to your navigation bar<a class="headerlink" href="#add-it-to-your-navigation-bar" title="Permanent link">&para;</a></h3>
 <ol>
 <li>
 <p>Open the <code>mkdocs.yml</code> file in your Project</p>
 </li>
 <li>
-<p>Add the information to the YAML <code>nav</code> section, which will almost always be the text that you want to appear in the navigation bar, and the file name of the <strong>Markdown (md) file</strong> that will be the source for the the page on your website. That would be <code>new_page.md</code> for this example . So in the <code>mkdocs.yml</code> I would need to add this to the nav section: </p>
+<p>Add the information to the YAML <code>nav</code> section, which will almost always be simply the file name of the <strong>markdown (md) file</strong> that will be the source for the the page on your website. <code>mkdocs</code> will determine the text in the navigation bar from the file's <code>title</code> that you set in the YAML front matter. That would be <code>new_page.md</code> for this example . So in the <code>mkdocs.yml</code> I would need to add this to the nav section: </p>
 </li>
 </ol>
-<pre><code>    - 'A New Page': new_page.md
+<pre><code class="language-md">    - new_page.md
 </code></pre>
-<p>Note: If the new page is part of the list of Topics, you would add it within the <code>Topic</code> subsection of the nav section in the same way as above. You can, of course, even add new subsections to the nav. For example, <code>Assignments</code> could become a subsection instead of a single page, with each Assignment having its own .md file (<code>assignment_1.md</code>, <code>assignment_2.md</code>, etc...)</p>
+<p>Note: If the new page is part of the list of Topics, you would add it within the <code>Topic</code> subsection of the nav section in the same way as above. You can, of course, even add new subsections to the nav. For example, <code>Assignments</code> could become a subsection heading instead of a markdown page, with each Assignment having its own .md file (<code>assignment_1.md</code>, <code>assignment_2.md</code>, etc...)</p>
 <p style="color: #ba5e00"><b>Note:</b> YAML is space & indentation specific. Follow the structure that already exists in this template to avoid YAML errors.</p>
 
 <p>How is the website finding the html? By default, <code>mkdocs</code> assumes that files are stored in the <code>docs</code> folder. That means when we run the 'build' command (<code>mkdocs build</code> at the command line), our .md pages are render to HTML &amp; sent to the <code>site</code> folder. This is also important because when we deploy the site (make it live), we will want to deploy <strong>from that site folder</strong> using GitHub pages.</p>

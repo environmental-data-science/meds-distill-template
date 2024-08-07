@@ -2,9 +2,6 @@
 title: "Topic 6: Internal & external links"
 ---
 
-# {{ get_title(page) }}
-{{ get_description(page) }}
-
 <p style="color: #ba5e00"><b>TO UPDATE THIS PAGE:</b> Open and edit the <b>topic_6.md</b> file, in <code>docs/</code> folder, to delete this placeholder text and customize with your own!</p>
 
 ## Linking to internal parts of your site
@@ -18,6 +15,7 @@ For example, if I want to link here to the Resources page, within my .md that lo
 Which, when built, looks like this: 
 
 Find more resources [here](resources.md).
+
 
 ## External links
 

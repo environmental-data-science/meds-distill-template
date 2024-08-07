@@ -4,22 +4,25 @@ site_url: https://environmental-data-science.github.io/meds-mkdocs-template/  # 
 repo_url: https://github.com/environmental-data-science/meds-distill-template # Update this with the actual URL
 theme:
   name: material
+  custom_dir: 'overrides'
+  toc:
+    enabled: true
 docs_dir: 'docs'
 nav:
   - Home: index.md
   - Topics:
-      - 'Topic 1: Add a new site page': topic_1.md
-      - 'Topic 2: Update site title & subtitle': topic_2.md
-      - 'Topic 3: Add images': topic_3.md
-      - 'Topic 4: Change the theme': topic_4.md
-      - 'Topic 5: Basic formatting': topic_5.md
-      - 'Topic 6: Internal & external links': topic_6.md
-      - 'Topic 7: Remove tables of contents': topic_7.md
-      - 'Topic 8: Add a dropdown menu from navigation bar item': topic_8.md
-      - 'Topic 9: Change site fonts': topic_9.md
-      - 'Topic 10: Add a table': topic_10.md
-  - Assignments: assignments.md
-  - Resources: resources.md
+      - topic_1.md
+      - topic_2.md
+      - topic_3.md
+      - topic_4.md
+      - topic_5.md
+      - topic_6.md
+      - topic_7.md
+      - topic_8.md
+      - topic_9.md
+      - topic_10.md
+  - assignments.md
+  - resources.md
 markdown_extensions:
   - toc:
       permalink: true
@@ -31,4 +34,4 @@ extra_javascript:
   - assets/js/set_base_url.js  # custom script to set base paths
 plugins:
   - search 
-  - macros
+

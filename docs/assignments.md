@@ -3,6 +3,9 @@ title: "Assignments"
 ---
 <p style="color: #ba5e00"><b>TO UPDATE THIS PAGE:</b> Open and edit the <b>assigments.md</b> file, in <code>docs/</code> folder, to delete this placeholder text and customize with your own!</p>
 
+# {{ get_title(page) }}
+{{ get_description(page) }}
+
 ### Assignment materials and dates
 
 | Assignment materials | Assigned   | Due date   |

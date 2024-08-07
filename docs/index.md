@@ -2,7 +2,7 @@
 title: "EDS 123: Optional MEDS Template"
 description: "A minimal website skeleton and theme for MEDS course with `mkdocs`"
 ---
-
+# EDS 123: Optional MEDS Template
 <!--
 # Learn more about creating websites with MkDcos at:
 # https://www.mkdocs.org
@@ -13,11 +13,8 @@ description: "A minimal website skeleton and theme for MEDS course with `mkdocs`
 UPDATE IMAGE HERE 
 -->
 
-# {{ get_title(page) }}
-{{ get_description(page) }}
-
 <figure>
-<img src="assets/images/usgs_sat.jpeg"  style="width: 100%;">
+<img src="/meds-mkdocs-template/assets/images/usgs_sat.jpeg"  style="width: 100%;">
 <figcaption>Update this image by dropping your new image into the docs/assets/images folder of the project, then open the index.md & change the path to point to the new image. Image: Mississippi River south of Memphis, TN, from USGS shared on Unsplash</figcaption>
 </figure>
 <!--
@@ -27,7 +24,7 @@ or copy/paste this code elsewhere, updating the file path, to add other images t
 
 You can also use html if you want to control more aspects of image presentation:
  
- <img src="assets/images/usgs_sat.jpeg" alt="Description of the image" style="width: 100%;">
+ <img src="/meds-mkdocs-template/assets/images/usgs_sat.jpeg" alt="Description of the image" style="width: 100%;">
 -->
 
 ## Welcome to the MEDS `mkdocs` template
@@ -119,3 +116,4 @@ Condimentum id venenatis a condimentum. Ultricies mi quis hendrerit dolor magna 
 | 8    | Topics         | Topics     |
 | 9    | Topics         | Topics     |
 | 10   | Topics         | Topics     |
+

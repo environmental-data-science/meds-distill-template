@@ -70,7 +70,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#topic-7-remove-tables-of-contents" class="md-skip">
+        <a href="#steps-to-disable-the-table-of-contents-in-mkdocs" class="md-skip">
           Skip to content
         </a>
       
@@ -284,7 +284,7 @@
         
   
   <span class="md-ellipsis">
-    Topic 1: Add a new site page
+    Topic 1: Add/remove a site page
   </span>
   
 
@@ -305,7 +305,7 @@
         
   
   <span class="md-ellipsis">
-    Topic 2: Update site title & subtitle
+    Topic 2: Update site title and subtitle
   </span>
   
 
@@ -326,7 +326,7 @@
         
   
   <span class="md-ellipsis">
-    Topic 3: Add images
+    Topic 3: Adding images
   </span>
   
 
@@ -412,8 +412,17 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
-        
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Topic 7: Remove tables of contents
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
         
@@ -424,6 +433,56 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#steps-to-disable-the-table-of-contents-in-mkdocs" class="md-nav__link">
+    <span class="md-ellipsis">
+      Steps to Disable the Table of Contents in MkDocs
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#removing-the-table-of-contents-for-a-single-page" class="md-nav__link">
+    <span class="md-ellipsis">
+      Removing the Table of Contents for a single page
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Removing the Table of Contents for a single page">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#how-does-this-work" class="md-nav__link">
+    <span class="md-ellipsis">
+      How does this work?
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -441,7 +500,7 @@
         
   
   <span class="md-ellipsis">
-    Topic 8: Add a dropdown menu from navigation bar item
+    Topic 8: Creating a dropdown list in the navigation bar
   </span>
   
 
@@ -462,7 +521,7 @@
         
   
   <span class="md-ellipsis">
-    Topic 9: Change site fonts
+    Topic 9: Changing site fonts
   </span>
   
 
@@ -483,7 +542,7 @@
         
   
   <span class="md-ellipsis">
-    Topic 10: Add a table
+    Topic 10: Inserting tables
   </span>
   
 
@@ -531,7 +590,7 @@
         
   
   <span class="md-ellipsis">
-    Resources
+    Course Resources
   </span>
   
 
@@ -557,8 +616,47 @@
   
   
   
-    
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#steps-to-disable-the-table-of-contents-in-mkdocs" class="md-nav__link">
+    <span class="md-ellipsis">
+      Steps to Disable the Table of Contents in MkDocs
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#removing-the-table-of-contents-for-a-single-page" class="md-nav__link">
+    <span class="md-ellipsis">
+      Removing the Table of Contents for a single page
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Removing the Table of Contents for a single page">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#how-does-this-work" class="md-nav__link">
+    <span class="md-ellipsis">
+      How does this work?
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -576,17 +674,91 @@
   
 
 
-<h1 id="topic-7-remove-tables-of-contents">Topic 7: Remove tables of contents<a class="headerlink" href="#topic-7-remove-tables-of-contents" title="Permanent link">&para;</a></h1>
+  <h1>Topic 7: Remove tables of contents</h1>
+
 <p style="color: #ba5e00"><b>TO UPDATE THIS PAGE:</b> Open and edit the <b>topic_7.md</b> file, in <code>docs/</code> folder, to delete this placeholder text and customize with your own!</p>
 
-<p>In this template, you'll notice that a Table of Contents is automatically created on pages with headings (starting with Level 2 headers as top-level items). </p>
-<p>To remove the auto-table of contents, open the <code>_site.yml</code> file. In the <code>output</code> section, change the <code>toc:</code> and <code>toc_float:</code> fields to <code>false</code>. </p>
-<p>That section in <code>_site.yml</code> would then look like this, and the table of contents won't appear: </p>
-<pre><code>output:
-  distill::distill_article:
-    toc: false
-    toc_float: false
+<p>In this MkDocs template, you'll notice that a Table of Contents is automatically created on pages with headings (starting with Level 2 headers as top-level items).</p>
+<p>To remove the automatic Table of Contents, open the <code>mkdocs.yml</code> file. In the <code>theme</code> section, adjust the <code>toc</code> settings to disable it.</p>
+<p>That section in <code>mkdocs.yml</code> would then look like this, and the Table of Contents won't appear:</p>
+<pre><code class="language-yaml">theme:
+  name: 'material'
+  toc:
+    enabled: false
 </code></pre>
+<h3 id="steps-to-disable-the-table-of-contents-in-mkdocs">Steps to Disable the Table of Contents in MkDocs<a class="headerlink" href="#steps-to-disable-the-table-of-contents-in-mkdocs" title="Permanent link">&para;</a></h3>
+<ol>
+<li><strong>Open <code>mkdocs.yml</code></strong>:</li>
+<li>
+<p>Locate your <code>mkdocs.yml</code> configuration file in the root of your MkDocs project.</p>
+</li>
+<li>
+<p><strong>Modify the Theme Section</strong>:</p>
+</li>
+<li>
+<p>Add or update the <code>theme</code> section to include the <code>toc</code> settings with <code>enabled: false</code>.</p>
+</li>
+<li>
+<p><strong>Save Changes</strong>:</p>
+</li>
+<li>
+<p>Save the file to apply the changes.</p>
+</li>
+<li>
+<p><strong>Rebuild Your Site</strong>:</p>
+</li>
+<li>Run <code>mkdocs serve</code> to test the changes locally and ensure the Table of Contents is no longer appearing on your pages.</li>
+<li>Once satisfied, deploy your site using <code>mkdocs gh-deploy</code>.</li>
+</ol>
+<h3 id="removing-the-table-of-contents-for-a-single-page">Removing the Table of Contents for a single page<a class="headerlink" href="#removing-the-table-of-contents-for-a-single-page" title="Permanent link">&para;</a></h3>
+<p>If you want to remove the Table of Contents (ToC) for a specific page in MkDocs, you can do this by using the <code>md</code>-specific metadata at the top of your Markdown file. Here’s how you can achieve this:</p>
+<ol>
+<li><strong>Open the Markdown File</strong>:</li>
+<li>
+<p>Locate the Markdown file for the page where you want to disable the Table of Contents.</p>
+</li>
+<li>
+<p><strong>Add Metadata to Disable ToC</strong>:</p>
+</li>
+<li>At the top of the Markdown file, add the following YAML front matter to disable the ToC for that page:</li>
+</ol>
+<pre><code class="language-markdown">---
+title: Page Title
+description: Page description
+hide:
+  - toc
+---
+
+# Your Page Title
+
+Your content goes here...
+</code></pre>
+<ol>
+<li><strong>Save Changes</strong>:</li>
+<li>
+<p>Save the Markdown file with the added front matter.</p>
+</li>
+<li>
+<p><strong>Rebuild and Test Your Site</strong>:</p>
+</li>
+<li>Run <code>mkdocs serve</code> to view the changes locally and confirm that the ToC is not appearing on that specific page.</li>
+<li>Deploy your site using <code>mkdocs gh-deploy</code> once you are satisfied with the results.</li>
+</ol>
+<h4 id="how-does-this-work">How does this work?<a class="headerlink" href="#how-does-this-work" title="Permanent link">&para;</a></h4>
+<ul>
+<li><strong>YAML Front Matter</strong>: The YAML front matter (<code>---</code> block) is used to set page-specific options in MkDocs. The <code>hide: - toc</code> setting specifically instructs MkDocs to hide the Table of Contents for that page.</li>
+</ul>
+<p>To learn more about MkDocs YAML front matter and page-specific options, you can refer to the following resources:</p>
+<ol>
+<li>
+<p><strong>MkDocs Official Documentation</strong>:<br />
+   The MkDocs documentation provides a comprehensive guide on configuring your site, including YAML front matter options for individual pages. <a href="https://www.mkdocs.org/user-guide/configuration/">MkDocs Configuration</a></p>
+</li>
+<li>
+<p><strong>MkDocs-Material Theme Documentation</strong>:<br />
+   If you are using the MkDocs-Material theme, it offers additional options and detailed explanations of YAML front matter specific to this theme. It includes various customization options like hiding elements, setting metadata, and more. <a href="https://squidfunk.github.io/mkdocs-material/reference/metadata/">MkDocs-Material Theme</a></p>
+</li>
+</ol>
 
 
 

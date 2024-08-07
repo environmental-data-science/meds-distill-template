@@ -2,9 +2,6 @@
 title: "Topic 4: Change the theme"
 ---
 
-# {{ get_title(page) }}
-{{ get_description(page) }}
-
 <p style="color: #ba5e00"><b>TO UPDATE THIS PAGE:</b> Open and edit the <b>topic_4.md</b> file, in <code>docs/</code> folder, to delete this placeholder text and customize with your own!</p>
 
 The bells and whistles of this MEDS template (colors, fonts, spacing, etc.) are customized in the `theme.css` file in your Project root. 
