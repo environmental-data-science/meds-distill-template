@@ -41,6 +41,68 @@ html {
   background-color: #003660;
   color: rgba(255, 255, 255, 0.8);
 }
+/* Sidebar navigation link styles */
+.md-sidebar .md-nav__link {
+    color: inherit;
+    /* Use inherited text color for links */
+    background-color: transparent;
+    /* Ensure no background color */
+    text-decoration: none;
+    /* Remove underlines */
+    transition: color 0.3s ease;
+    /* Smooth transition for color changes */
+}
+
+/* Sidebar navigation link hover styles */
+.md-sidebar .md-nav__link:hover,
+.md-sidebar .md-nav__link:focus {
+    color: rgba(4, 124, 145, 1);
+    /* Change link text color on hover */
+    background-color: transparent !important;
+    /* Ensure no background change */
+    text-decoration: underline;
+    /* Optional: add underline on hover */
+}
+
+/* Submenu link styles */
+.md-nav--secondary .md-nav__link {
+    color: inherit;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+/* Submenu link hover styles */
+.md-nav--secondary .md-nav__link:hover,
+.md-nav--secondary .md-nav__link:focus {
+    color: rgba(4, 124, 145, 1);
+    /* Change link text color on hover */
+    background-color: transparent !important;
+    /* Ensure no background change */
+    text-decoration: underline;
+    /* Optional: add underline on hover */
+}
+
+/* Active navigation link styles */
+.md-sidebar .md-nav__link--active {
+    color: rgba(4, 124, 145, 1);
+    /* Style active link text */
+    font-weight: bold;
+    /* Optional: bold the active link */
+    background-color: transparent;
+    /* Ensure no background change */
+}
+
+/* Override any existing hover background style */
+.md-nav__item:hover {
+    background-color: transparent !important;
+}
+
+/* General list styling */
+.md-nav__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
 
 .md-footer a:hover {
   color: white;
