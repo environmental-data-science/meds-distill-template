@@ -1,68 +1,68 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-         <loc>https://&lt;YOUR_USER_NAME&gt;.github.io/&lt;REPO_NAME&gt;/</loc>
-         <lastmod>2024-08-07</lastmod>
+         <loc>https://environmental-data-science.github.io/meds-mkdocs-template/</loc>
+         <lastmod>2024-08-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://&lt;YOUR_USER_NAME&gt;.github.io/&lt;REPO_NAME&gt;/assignments/</loc>
-         <lastmod>2024-08-07</lastmod>
+         <loc>https://environmental-data-science.github.io/meds-mkdocs-template/assignments/</loc>
+         <lastmod>2024-08-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://&lt;YOUR_USER_NAME&gt;.github.io/&lt;REPO_NAME&gt;/resources/</loc>
-         <lastmod>2024-08-07</lastmod>
+         <loc>https://environmental-data-science.github.io/meds-mkdocs-template/resources/</loc>
+         <lastmod>2024-08-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://&lt;YOUR_USER_NAME&gt;.github.io/&lt;REPO_NAME&gt;/topic_1/</loc>
-         <lastmod>2024-08-07</lastmod>
+         <loc>https://environmental-data-science.github.io/meds-mkdocs-template/topic_1/</loc>
+         <lastmod>2024-08-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://&lt;YOUR_USER_NAME&gt;.github.io/&lt;REPO_NAME&gt;/topic_10/</loc>
-         <lastmod>2024-08-07</lastmod>
+         <loc>https://environmental-data-science.github.io/meds-mkdocs-template/topic_10/</loc>
+         <lastmod>2024-08-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://&lt;YOUR_USER_NAME&gt;.github.io/&lt;REPO_NAME&gt;/topic_2/</loc>
-         <lastmod>2024-08-07</lastmod>
+         <loc>https://environmental-data-science.github.io/meds-mkdocs-template/topic_2/</loc>
+         <lastmod>2024-08-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://&lt;YOUR_USER_NAME&gt;.github.io/&lt;REPO_NAME&gt;/topic_3/</loc>
-         <lastmod>2024-08-07</lastmod>
+         <loc>https://environmental-data-science.github.io/meds-mkdocs-template/topic_3/</loc>
+         <lastmod>2024-08-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://&lt;YOUR_USER_NAME&gt;.github.io/&lt;REPO_NAME&gt;/topic_4/</loc>
-         <lastmod>2024-08-07</lastmod>
+         <loc>https://environmental-data-science.github.io/meds-mkdocs-template/topic_4/</loc>
+         <lastmod>2024-08-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://&lt;YOUR_USER_NAME&gt;.github.io/&lt;REPO_NAME&gt;/topic_5/</loc>
-         <lastmod>2024-08-07</lastmod>
+         <loc>https://environmental-data-science.github.io/meds-mkdocs-template/topic_5/</loc>
+         <lastmod>2024-08-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://&lt;YOUR_USER_NAME&gt;.github.io/&lt;REPO_NAME&gt;/topic_6/</loc>
-         <lastmod>2024-08-07</lastmod>
+         <loc>https://environmental-data-science.github.io/meds-mkdocs-template/topic_6/</loc>
+         <lastmod>2024-08-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://&lt;YOUR_USER_NAME&gt;.github.io/&lt;REPO_NAME&gt;/topic_7/</loc>
-         <lastmod>2024-08-07</lastmod>
+         <loc>https://environmental-data-science.github.io/meds-mkdocs-template/topic_7/</loc>
+         <lastmod>2024-08-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://&lt;YOUR_USER_NAME&gt;.github.io/&lt;REPO_NAME&gt;/topic_8/</loc>
-         <lastmod>2024-08-07</lastmod>
+         <loc>https://environmental-data-science.github.io/meds-mkdocs-template/topic_8/</loc>
+         <lastmod>2024-08-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://&lt;YOUR_USER_NAME&gt;.github.io/&lt;REPO_NAME&gt;/topic_9/</loc>
-         <lastmod>2024-08-07</lastmod>
+         <loc>https://environmental-data-science.github.io/meds-mkdocs-template/topic_9/</loc>
+         <lastmod>2024-08-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
 </urlset>
