@@ -3,18 +3,23 @@ site_name: EDS 123
 # Update this with your course name (e.g. Essential Python for Data Scientists)
 site_description: MEDS Courses mkdocs template
 # Update this with the actual URL (will be hosted at your github pages site)
-site_url: https://<YOUR_USER_NAME>.github.io/<REPO_NAME>/  
+site_url: https://environmental-data-science.github.io/meds-mkdocs-template/  
 # Update this with the actual URL to the repo
-repo_url: https://github.com/<YOUR_USER_NAME>/<REPO_NAME>
+repo_url: https://github.com/environmental-data-science/meds-mkdocs-template
 
 # You shouldn't need to edit these:
 theme:
   name: material
+  palette:
+    primary: custom
   logo: assets/images/bren_white_icon.png
   favicon: assets/images/favicon.ico
   custom_dir: 'overrides'
   toc:
     enabled: true
+  features:
+    - navigation.tabs
+    - navigation.tabs.sticky
 docs_dir: 'docs'
 
 # Update the nav items as you build your course materials (i.e. add/remove pages)

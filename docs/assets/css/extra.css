@@ -1,3 +1,11 @@
+:root {
+    --md-primary-fg-color: rgba(4, 124, 145, 1);
+}
+
+.md-nav__source {
+    background-color: var(--md-primary-fg-color);
+}
+
 /* Ensure code blocks are left-justified */
 pre code {
     text-align: left;
